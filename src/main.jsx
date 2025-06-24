@@ -12,13 +12,13 @@ import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<BrowserRouter basename="/GSAP-Playground">
+		<BrowserRouter basename="GSAP-Playground">
 			{/* <HashRouter basename="/GSAP-Playground"> */}
 			<Routes>
-				<Route path="/" element={<App />} />
-				<Route path="/base" element={<BaseLiveDemo />} />
-				<Route path="/easing" element={<EasingLiveDemo />} />
-				<Route path="/staggers" element={<StaggersLiveDemo />} />
+				<Route basename="GSAP-Playground" path="/" element={<App />} />
+				<Route basename="GSAP-Playground" path="/base" element={<BaseLiveDemo />} />
+				<Route basename="GSAP-Playground" path="/easing" element={<EasingLiveDemo />} />
+				<Route basename="GSAP-Playground" path="/staggers" element={<StaggersLiveDemo />} />
 			</Routes>
 			{/* </HashRouter> */}
 		</BrowserRouter>
