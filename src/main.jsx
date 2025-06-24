@@ -7,8 +7,8 @@ import { BaseLiveDemo } from "./try/Base.jsx";
 import { EasingLiveDemo } from "./try/Easing.jsx";
 import { StaggersLiveDemo } from "./try/Staggers.jsx";
 
-// import { HashRouter, BrowserRouter, Route, Routes } from "react-router";
-import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes } from "react-router";
+// import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>

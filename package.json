@@ -6,7 +6,7 @@
 	"homepage": "https://wxmvv.github.io/GSAP-Playground",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "vite build && sh deploy.sh",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
