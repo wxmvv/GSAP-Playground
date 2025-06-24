@@ -9,6 +9,6 @@ export default defineConfig({
 		outDir: "docs",
 	},
 	//使用相对路径
-	base: "./",
+	base: "/GSAP-Playground/",
 	plugins: [react(), tailwindcss()],
 });
