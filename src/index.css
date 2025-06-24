@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+	/* .bg-system-accent {
+		background-color: rgb(from -apple-system-control-accent r g b / 80%);
+	} */
+}
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.a {
+	height: calc(100vh - 2rem);
+}
