@@ -8,5 +8,7 @@ export default defineConfig({
 	build: {
 		outDir: "docs",
 	},
+	//使用相对路径
+	base: "./",
 	plugins: [react(), tailwindcss()],
 });
