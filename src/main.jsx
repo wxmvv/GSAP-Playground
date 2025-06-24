@@ -11,15 +11,15 @@ import { HashRouter, BrowserRouter, Route, Routes } from "react-router";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<BrowserRouter basename="/GSAP-Playground">
-			{/* <HashRouter> */}
+		{/* <BrowserRouter basename="/GSAP-Playground"> */}
+		<HashRouter basename="/GSAP-Playground">
 			<Routes>
 				<Route path="/" element={<App />} />
-				<Route path="/GSAP-Playground/base" element={<BaseLiveDemo />} />
-				<Route path="/GSAP-Playground/easing" element={<EasingLiveDemo />} />
-				<Route path="/GSAP-Playground/staggers" element={<StaggersLiveDemo />} />
+				<Route path="/base" element={<BaseLiveDemo />} />
+				<Route path="/easing" element={<EasingLiveDemo />} />
+				<Route path="/staggers" element={<StaggersLiveDemo />} />
 			</Routes>
-			{/* </HashRouter> */}
-		</BrowserRouter>
+		</HashRouter>
+		{/* </BrowserRouter> */}
 	</StrictMode>
 );
