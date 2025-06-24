@@ -8,7 +8,11 @@ export default defineConfig({
 	build: {
 		outDir: "docs",
 	},
+	//静态资源路径
+	assetsDir: "assets",
 	//使用相对路径
-	base: "/GSAP-Playground/",
+	// base: "/GSAP-Playground/",
+	base: "https://wxmvv.github.io/GSAP-Playground/",
+	//插件
 	plugins: [react(), tailwindcss()],
 });
