@@ -12,7 +12,8 @@ export default defineConfig({
 	assetsDir: "assets",
 	//使用相对路径
 	// base: "/GSAP-Playground/",
-	base: "https://wxmvv.github.io/GSAP-Playground/",
+	// base: "https://wxmvv.github.io/GSAP-Playground/",
+	base: "./",
 	//插件
 	plugins: [react(), tailwindcss()],
 });
