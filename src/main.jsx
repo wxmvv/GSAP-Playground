@@ -15,9 +15,9 @@ createRoot(document.getElementById("root")).render(
 			{/* <HashRouter basename="/GSAP-Playground"> */}
 			<Routes>
 				<Route path="/" element={<App />} />
-				<Route path="/base" element={<BaseLiveDemo />} />
-				<Route path="/easing" element={<EasingLiveDemo />} />
-				<Route path="/staggers" element={<StaggersLiveDemo />} />
+				<Route path="./base" element={<BaseLiveDemo />} />
+				<Route path="./easing" element={<EasingLiveDemo />} />
+				<Route path="./staggers" element={<StaggersLiveDemo />} />
 			</Routes>
 			{/* </HashRouter> */}
 		</BrowserRouter>
