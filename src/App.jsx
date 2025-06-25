@@ -1,4 +1,5 @@
 import { Card } from "./component/Card";
+import routers from "./routers.jsx";
 
 function App() {
 	return (
@@ -6,9 +7,9 @@ function App() {
 			<div className="p-20 flex flex-col gap-8">
 				<h1 className="menu-title">GSAP Try</h1>
 				<div className="flex flex-row flex-wrap gap-8">
-					<Card title="Base" desc="to from fromTo set 4最基础方法" href="/GSAP-Playground/base"></Card>
-					<Card title="Easing" desc="动画的缓动曲线" href="/GSAP-Playground/easing"></Card>
-					<Card title="Staggers" desc="分级动画，让你的元素一个一个依次出现" href="/GSAP-Playground/staggers"></Card>
+					{routers.map((item, index) => {
+						return <Card key={index} title={item.title} desc={item.desc} href={item.href}></Card>;
+					})}
 				</div>
 			</div>
 		</>
