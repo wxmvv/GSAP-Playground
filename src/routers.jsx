@@ -3,6 +3,7 @@ import { EasingLiveDemo } from "./try/Easing.jsx";
 import { StaggersLiveDemo } from "./try/Staggers.jsx";
 import { TimelinesLiveDemo } from "./try/Timelines.jsx";
 import { ControlAndCallbacksLiveDemo } from "./try/ControlAndCallbacks.jsx";
+import { Plugin_ScrollTriggerLiveDemo } from "./try/Plugin_ScrollTrigger.jsx";
 
 const basename = "/GSAP-Playground";
 
@@ -41,6 +42,13 @@ export const routers = [
 		title: "ControlAndCallbacks",
 		desc: "控制器和回调函数",
 		component: <ControlAndCallbacksLiveDemo />,
+	},
+	{
+		path: "/Plugin_ScrollTrigger",
+		href: `${basename}/Plugin_ScrollTrigger`,
+		title: "Plugin_ScrollTrigger",
+		desc: "插件-滚动触发",
+		component: <Plugin_ScrollTriggerLiveDemo />,
 	},
 ];
 
