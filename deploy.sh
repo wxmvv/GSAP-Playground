@@ -4,7 +4,10 @@
 # 最后将docs文件夹压缩成zip包
 
 # 设置列表
-list=("base" "easing" "staggers")
+# 从routers.jsx中获取组件列表
+
+list=($(cat src/routers.jsx | grep "path:" | awk -F '"' '{print $2}' | sed 's|^/||' | grep -v "index" | grep -v "404"))
+# list=("base" "easing" "staggers")
 
 # 复制文件
 for item in ${list[@]}; do
