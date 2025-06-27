@@ -10,12 +10,12 @@ export function LiveDemo({ code, scope, theme = themes.dracula, title }) {
 				</a>
 				<h1 className="menu-title h-[30px]">{title}</h1>
 				<div className="p-8 gap-8 flex flex-row w-full h-[calc(100%-60px)]">
-					<div className="mockup-window border border-base-300 w-full">
-						<LiveEditor className="flex-1/2 overflow-scroll bg-green-50" />
-						<LiveError className="flex-1/12" />
+					<div className="mockup-window border border-base-300 w-full text-sm font-mono">
+						<LiveEditor className="flex-1/2 overflow-scroll bg-accent/40" />
+						<LiveError className="flex-1/12 bg-accent/40" />
 					</div>
 					<div className="mockup-window border border-base-300 w-full">
-						<LivePreview className="flex-1 flex flex-col p-8" />
+						<LivePreview className="flex-1 flex flex-col bg-transparent" />
 					</div>
 				</div>
 			</div>

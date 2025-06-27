@@ -30,7 +30,6 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { SplitText } from "gsap/SplitText";
 import { TextPlugin } from "gsap/TextPlugin";
 
-
 // 全部插件
 gsap.registerPlugin(
 	useGSAP,
@@ -38,7 +37,7 @@ gsap.registerPlugin(
 	DrawSVGPlugin,
 	EaselPlugin,
 	Flip,
-	GSDevTools,
+	GSDevTools, // https://gsap.com/docs/v3/Plugins/GSDevTools 可以在浏览器中调试动画
 	InertiaPlugin,
 	MotionPathHelper,
 	MotionPathPlugin,
@@ -61,11 +60,9 @@ gsap.registerPlugin(
 	CustomWiggle
 );
 
-
 // 全局默认值，也可以单独给每个动画添加
 gsap.defaults({
 	// overwrite: true,  // https://gsap.com/resources/conflict 多个动画冲突时的处理方式
 	// ease: "power1.inOut",
 	// duration: 1,
-})
-
+});

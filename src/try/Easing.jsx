@@ -2,12 +2,14 @@ import { gsap } from "gsap";
 import React, { useRef, useState, useEffect } from "react";
 import { LiveDemo } from "../component/LiveDemo";
 
+import { GSDevTools } from "gsap/GSDevTools";
+
 // DOC
 // https://gsap.com/docs/v3/Eases/CustomEase
 
 // TODO 使用svg 绘制曲线
 // code
-const scope = { React, gsap, useRef, useState, useEffect };
+const scope = { React, gsap, useRef, useState, useEffect, GSDevTools };
 const code = `
 	function App() {
 		const GsapToRef = useRef(null);
@@ -22,7 +24,7 @@ const code = `
 	 	        console.log("动画完成，缓动曲线数据:", points);
 	 	      }
 	 	    });
-
+			
 	 	    tl.fromTo(GsapToRef.current, {
 				x:0,
 			},{
