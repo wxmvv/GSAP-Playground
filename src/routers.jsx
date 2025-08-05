@@ -5,6 +5,8 @@ import { TimelinesLiveDemo } from "./try/Timelines.jsx";
 import { ControlAndCallbacksLiveDemo } from "./try/ControlAndCallbacks.jsx";
 import { Plugin_ScrollTriggerLiveDemo } from "./try/Plugin_ScrollTrigger.jsx";
 
+import { CustomCursorLiveDemo } from "./usage/CustomCursor.jsx";
+
 const basename = "/GSAP-Playground";
 
 export const routers = [
@@ -49,6 +51,13 @@ export const routers = [
 		title: "Plugin_ScrollTrigger",
 		desc: "插件-滚动触发",
 		component: <Plugin_ScrollTriggerLiveDemo />,
+	},
+	{
+		path: "/CustomCursor",
+		href: `${basename}/CustomCursor`,
+		title: "CustomCursor",
+		desc: "自定义光标",
+		component: <CustomCursorLiveDemo />,
 	},
 ];
 
