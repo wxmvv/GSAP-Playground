@@ -4,7 +4,7 @@ import { StaggersLiveDemo } from './try/Staggers.jsx';
 import { TimelinesLiveDemo } from './try/Timelines.jsx';
 import { ControlAndCallbacksLiveDemo } from './try/ControlAndCallbacks.jsx';
 import { Plugin_ScrollTriggerLiveDemo } from './try/Plugin_ScrollTrigger.jsx';
-
+import { CanvasTest } from './try/CanvasTest.jsx'
 import { CustomCursorLiveDemo } from './usage/CustomCursor.jsx';
 
 import { CesiumTest } from './try/CesiumTest.jsx';
@@ -75,6 +75,14 @@ export const routers = [
 		desc: '测试地图框架 cesium',
 		component: <CesiumTest />,
 		imgSrc: './images/cesium.png'
+	},
+	{
+		path: '/canvas',
+		href: `${basename}/canvas`,
+		title: 'canvas 2D',
+		desc: 'canvas画板基础实现',
+		component: <CanvasTest />,
+		imgSrc: './images/Canvas.jpg'
 	}
 ];
 

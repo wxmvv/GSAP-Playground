@@ -1,4 +1,8 @@
 // https://cesium.com/downloads/
+// https://resium.reearth.io
+
+// 待参考
+// https://gitee.com/ice-gl/icegl-three-vue-tres#https://gitee.com/link?target=https%3A%2F%2Fwww.icegl.cn%2Ftvtstore%2FzoneMachinRoom
 
 import { Cartesian3, createOsmBuildingsAsync, Ion, Math as CesiumMath, Terrain, Viewer } from 'cesium';
 import 'cesium/Build/Cesium/Widgets/widgets.css';
